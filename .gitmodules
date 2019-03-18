@@ -1,0 +1,3 @@
+[submodule "create-react-app-ejected-tpl"]
+	path = create-react-app-ejected-tpl
+	url = https://github.com/pedrule/create-react-app-ejected-tpl.git
