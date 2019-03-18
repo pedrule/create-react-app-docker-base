@@ -1,0 +1,14 @@
+version: "3.5"
+services: 
+  create-start:
+    image: "pedrule/create-react-app-ejected"
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes: 
+      - type: bind
+        source: ./tpl-app
+        target: /usr/tpl
+    entrypoint: yarn start
+    ports:
+    - "3000:3000"
